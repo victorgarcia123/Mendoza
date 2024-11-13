@@ -1,63 +1,61 @@
 body {
     font-family: Arial, sans-serif;
-    color: #333;
-    margin: 20px;
-    background: linear-gradient(to right, #e0f7fa, #b2ebf2, #80deea);
+    margin: 0;
+    padding: 0;
+    background-color: #ff4141;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 header {
-    text-align: center;
-    background-color: #00796b;
-    color: white;
-    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 20px;
+    background-color: rgb(0, 255, 76);
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+.profile-image {
+    width: 20%;
+    border-radius: 50%;
+    border: 2px solid #ddd;
 }
 
 h1 {
-    font-size: 2.5em;
-}
-
-h2 {
-    color: #004d40;
-}
-
-nav {
-    margin: 15px 0;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    padding: 10px;
-}
-
-nav a:hover {
-    background-color: #004d40;
-    color: #e0f7fa;
-    cursor: pointer;
-}
-
-section {
-    margin: 20px 0;
-}
-
-article {
-    margin-bottom: 20px;
-}
-
-footer {
+    width: 60%;
     text-align: center;
-    margin-top: 20px;
-    font-size: 0.8em;
+    margin: 0;
 }
 
-img {
-    width: 600px;
-    align-items: center;
+.icon {
+    width: 20%;
+    border: 2px solid #ddd;
 }
 
+@media screen and (max-width: 800px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
+    .profile-image {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .icon {
+        width: 100%;
+        border: 2px solid #ff5733;
+    }
+}
